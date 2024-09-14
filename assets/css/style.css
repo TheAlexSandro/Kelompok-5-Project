@@ -107,6 +107,7 @@ a {
     background-color: #07e1f15e;
     padding: 20px 60px;
     transition: 300ms;
+    color: var(--white-color);
 }
 
 .description a:hover {
