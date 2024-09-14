@@ -9,6 +9,7 @@
 :root {
     --white-color: white;
     --black-color: black;
+    --hyperlink-color: rgb(98, 0, 255);
 }
 
 body,
@@ -34,7 +35,7 @@ a::before {
     height: 2px;
     bottom: -2px;
     left: 30%;
-    background-color: var(--black-color);
+    background-color: var(--hyperlink-color);
     transition: width 0.4s ease, left 0.4s ease;
     transform: translateX(-50%);
 }
