@@ -333,6 +333,10 @@ li {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 900px) {
+    .navbar {
+        padding: 15px 41px 15px 41px
+    }
+
     .navbar .right-side {
         display: none;
     }
@@ -365,5 +369,18 @@ li {
         margin-top: 15px;
         display: grid;
         place-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        padding: 15px 69px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+
+    .navbar {
+        padding: 15px 69px;
     }
 }
