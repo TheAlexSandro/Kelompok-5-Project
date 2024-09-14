@@ -492,6 +492,7 @@ a {
     white-space: nowrap;
     cursor: pointer;
     transition: 300ms;
+    margin-bottom: 30px;
 }
 
 .movie-content .content .button:active,
