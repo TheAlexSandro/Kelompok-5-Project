@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     padding: 0rem 0;
     position: relative;
+    color: var(--hyperlink-color);
 }
 
 a::before {
@@ -35,7 +36,7 @@ a::before {
     height: 2px;
     bottom: -2px;
     left: 30%;
-    background-color: var(--hyperlink-color);
+    background-color: var(--black-color);
     transition: width 0.4s ease, left 0.4s ease;
     transform: translateX(-50%);
 }
