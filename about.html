@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="shortcut icon" href="assets/img/ejen-ali.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo" id="main-logo no-hover-a">
+            <a href="/" id="no-hover-a">Ejen Ali</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="right-side" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/" id="no-hover-a">
+                        <i class="fa-solid fa-house fa-xl"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="hamburger-menu">
+            <div class="logo">
+                <a href="/">Ejen Ali</a>
+            </div>
+            <hr>
+            <ul>
+                <li><a href="/" id="no-hover-a"><i class="fa-solid fa-house fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hidden">
+            <div class="overlay">
+                <h1>About Us</h1>
+                <p>Kami adalah Kelompok 5, sebuah tim yang dibentuk untuk menyelesaikan tugas sekolah dengan tujuan
+                    menciptakan
+                    sebuah website yang informatif dan menarik. Website ini merupakan bagian dari proyek pembelajaran
+                    kami,
+                    di
+                    mana kami berkolaborasi untuk mengembangkan keterampilan dalam desain web, pemrograman, dan
+                    kreativitas.
+                </p>
+
+                <p>
+                    Sebagai tim, kami berkomitmen untuk bekerja sama dan memberikan hasil terbaik. Setiap anggota
+                    kelompok
+                    memiliki peran yang penting dalam proses pembuatan website ini, mulai dari perencanaan, desain,
+                    hingga
+                    pengembangan. Melalui proyek ini, kami belajar bagaimana mengaplikasikan teori yang dipelajari di
+                    kelas
+                    ke
+                    dalam dunia nyata.
+                </p>
+                <p>
+                    Kami berharap website ini tidak hanya memenuhi persyaratan tugas, tetapi juga dapat memberikan nilai
+                    lebih
+                    bagi pengguna yang mengunjungi.
+                </p>
+                <p>Terima kasih atas dukungannya!</p>
+            </div>
+        </header>
+
+        <section class="team hidden" id="team">
+            <h1>Team</h1>
+            <p>Bertemulah dengan anggota kelompok 5</p>
+            <hr>
+            <div class="team-container">
+                <div class="team-card hidden">
+                    <img src="assets/img/team2.jpg" alt="Team Member 2" class="team-photo">
+                    <div class="team-info">
+                        <h3>M. Alfarabi</h3>
+                        <p><strong>Web Ideas</strong></p>
+                        <p>Dengan absen 04, memberikan inovasi desain website yang modern.</p>
+                    </div>
+                </div>
+
+                <div class="team-card hidden">
+                    <img src="assets/img/team4.jpg" alt="Team Member 4" class="team-photo">
+                    <div class="team-info">
+                        <h3>Rega Muda</h3>
+                        <p><strong>Vector Ideas</strong></p>
+                        <p>Dengan absen 23, mencarikan ide gambar dan vektor icon lainnya.</p>
+                    </div>
+                </div>
+    
+                <div class="team-card hidden">
+                    <img src="assets/img/team1.jpg" alt="Team Member 1" class="team-photo">
+                    <div class="team-info">
+                        <h3>Rehan Qiran</h3>
+                        <p><strong>Developer</strong></p>
+                        <p>Dengan absen 24, melakukan coding real-time terhadap pengembangan website.</p>
+                    </div>
+                </div>
+    
+                <div class="team-card hidden">
+                    <img src="assets/img/team3.jpg" alt="Team Member 3" class="team-photo">
+                    <div class="team-info">
+                        <h3>Rizky Akbar</h3>
+                        <p><strong>Tester</strong></p>
+                        <p>Dengan absen 27, menguji coba fitur dan UI baru pada website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Ejen Ali</h3>
+                <p>Dibuat dengan murni sepenuh hati.</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <hr>
+            <p>&copy; <span id="year"></span> by Kelompok 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

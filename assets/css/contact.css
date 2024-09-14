@@ -1,0 +1,414 @@
+/*
+* Copyright 2024 dan selamanya oleh Kelompok 5. All Rights reserved.
+* DILARANG MENYALIN, MENGUBAH, MENGGUBAH, MEMODIFIKASI KODE CSS INI.
+*/
+
+/* MAIN PADDING */
+main {
+    padding: 0 65px;
+}
+
+/* NAVBAR CSS */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+    padding: 15px 70px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: var(--black-color);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.3);
+}
+
+.navbar .logo a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar .right-side {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item i {
+    margin-right: 1.5rem;
+    transition: 300ms;
+}
+
+.nav-item i:hover {
+    transform: scale(1.5);
+    transition: 300ms;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    padding: 15px;
+    position: relative;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    display: block;
+}
+
+.mobile-menu .logo {
+    text-align: center;
+    margin-top: -45px;
+}
+
+.mobile-menu hr {
+    background-color: var(--black-color);
+    width: 70%;
+}
+
+/* FORM CSS */
+.form {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form h1 {
+    font-size: 30px;
+}
+
+.form input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.form .card {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+    border-style: solid;
+    border-color: black;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: 2.5rem 30px;
+}
+
+.form .card-image {
+	border-radius: 8px;
+	overflow: hidden;
+	padding-bottom: 65%;
+	background-image: url('https://assets.codepen.io/285131/coffee_1.jpg');
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 0 5%;
+	position: relative;
+}
+
+.form .card-heading {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	right: 10%;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #735400;
+	line-height: 1.222;
+	small {
+		display: block;
+		font-size: .75em;
+		font-weight: 400;
+		margin-top: .25em;
+	}
+}
+
+.form .card-form {
+	padding: 2rem 1rem 0;
+}
+
+.form .input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.form .input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.form .input-field,
+.form .input-textarea {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		&+.input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.form .input-textarea {
+    height: 200px;
+}
+
+.form .action {
+	margin-top: 2rem;
+}
+
+.form .action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 10px;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+    cursor: pointer;
+    transition: 300ms;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.form .action-button:hover {
+    transform: scale(1.1);
+}
+
+.form .card-info {
+    margin-top: 10px;
+    margin-bottom: -30px;
+	text-align: center;
+	font-size: .875rem;
+	color: #8597a3;
+	a {
+		display: block;
+		color: #6658d3;
+		text-decoration: none;
+	}
+}
+
+/* FOOTER CSS */
+footer {
+    margin-top: 100px;
+    background-color: #24292e;
+    padding: 30px 100px;
+    color: white;
+    max-width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30%;
+    margin-bottom: -40px;
+    max-width: 100%;
+}
+
+.footer-about {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-about h3 {
+    margin: 0 0 10px 0;
+}
+
+.footer-about p {
+    line-height: 1.6;
+}
+
+.footer-copyright {
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    padding-top: 20px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 900px) {
+
+    main {
+        padding: 0 25px;
+    }
+
+    p,
+    ul,
+    li,
+    ol {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding: 15px 41px 15px 41px
+    }
+
+    .navbar .right-side {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu.show {
+        left: 0;
+    }
+
+    .mobile-menu .dropdown-toggle {
+        text-align: center;
+    }
+
+    .mobile-menu i {
+        margin-top: 10px;
+        display: grid;
+        place-items: center;
+        transition: 300ms;
+        margin-bottom: -20px;
+    }
+
+    .mobile-menu i:hover {
+        transform: scale(1.5);
+    }
+
+    .mobile-menu .active {
+        margin-top: 15px;
+        display: grid;
+        place-items: center;
+    }
+
+    .form .card {
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 425px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px 0 rgba(153, 153, 153, 0.25);  /* Perbaikan pada rgba format */
+        padding: 2.5rem 30px;
+        background-color: white;
+    }
+
+    .form .formy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .form input,
+    .from textarea {
+        width: 100%;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: grid;
+        place-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about {
+        margin-bottom: -10px;
+    }
+
+    .footer-copyright hr {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 0 35px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+
+    main {
+        padding: 0 35px;
+    }
+}

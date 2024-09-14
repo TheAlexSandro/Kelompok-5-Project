@@ -1,0 +1,72 @@
+/*
+* Copyright 2024 dan selamanya oleh Kelompok 5. All Rights reserved.
+* DILARANG MENYALIN, MENGUBAH, MENGGUBAH, MEMODIFIKASI KODE CSS INI.
+*/
+
+/* GLOBAL CSS */
+:root {
+    --black-color: black;
+    --white-color: white;
+    --hyperlink-color: #690efa
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    padding: 0rem 0;
+    position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 30%;
+    background-color: var(--black-color);
+    transition: width 0.4s ease, left 0.4s ease;
+    transform: translateX(-50%);
+}
+
+a:hover::before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p,
+ol,
+ul,
+li {
+    font-size: 18px;
+}
+
+#no-hover-a {
+    cursor: pointer;
+}
+
+#no-hover-a::before {
+    width: 0;
+}
+
+/* HIDDEN TEXT CSS */
+.hidden {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hidden.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="shortcut icon" href="assets/img/ejen-ali.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" id="main-logo">
+            <a href="/" id="no-hover-a">Ejen Ali</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="right-side" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/" id="no-hover-a">
+                        <i class="fa-solid fa-house fa-xl"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="hamburger-menu">
+            <div class="logo">
+                <a href="/">Ejen Ali</a>
+            </div>
+            <hr>
+            <ul>
+                <li><a href="/" id="no-hover-a"><i class="fa-solid fa-house fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="video">
+            <h1>Video Ejen Ali</h1>
+            <p>Berikut video-video ejen ali pada musim 1 yang saat ini tersedia.</p>
+
+            <div class="video hidden" id="video">
+                <div class="video-container" id="video-container">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Ejen Ali</h3>
+                <p>Dibuat dengan murni sepenuh hati.</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <hr>
+            <p>&copy; <span id="year"></span> by Kelompok 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/loadVideo.js"></script>
+</body>
+</html>
