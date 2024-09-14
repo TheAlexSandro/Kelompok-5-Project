@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var cont = document.getElementById('container')
 
         if (!getEpisode) {
+            document.title = `Bad Request`
             var title = document.getElementById('load')
             title.innerHTML = `400 - Bad Request`
 
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var eps = getEpisode - 1
 
             try {
+                document.title = `Eps ${getEpisode} - ${data[eps][1]}`
                 var link = data[eps][2]
 
                 var title = document.getElementById('load')
@@ -73,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cont.appendChild(iframe)
                 cont.appendChild(button)
             } catch {
+                document.title = `Not Found`
                 var title = document.getElementById('load')
                 title.innerHTML = `404 - Not Found`
 
