@@ -136,10 +136,8 @@ main {
 	flex-direction: column;
 	width: 100%;
 	max-width: 425px;
-    border-style: solid;
-    border-color: black;
 	border-radius: 10px;
-	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	box-shadow: 0px 0px 10px rgb(0, 0, 0);
 	padding: 2.5rem 30px;
 }
 
@@ -203,9 +201,9 @@ main {
 	padding: .25rem 0;
 	&:focus, &:valid {
 		outline: 0;
-		border-bottom-color: #6658d3;
+		border-bottom-color: black;
 		&+.input-label {
-			color: #6658d3;
+			color: black;
 			transform: translateY(-1.5rem);
 		}
 	}
@@ -225,7 +223,7 @@ main {
 	padding: 10px;
 	width: 100%;
 	font-weight: 500;
-	background-color: #6658d3;
+	background-color: black;
 	border-radius: 6px;
 	color: #FFF;
 	border: 0;
@@ -234,6 +232,17 @@ main {
 	&:focus {
 		outline: 0;
 	}
+}
+
+.form .action-button i {
+    transform: translateX(5px);
+    transition: 300ms;
+}
+
+.form .action-button:hover i {
+    transform: translateY(-50px) translateX(50px);
+    transition: 300ms;
+    z-index: -999;
 }
 
 .form .action-button:hover {
@@ -248,7 +257,7 @@ main {
 	color: #8597a3;
 	a {
 		display: block;
-		color: #6658d3;
+		color: black;
 		text-decoration: none;
 	}
 }
